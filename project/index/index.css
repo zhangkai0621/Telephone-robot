@@ -1,0 +1,514 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+    	text-decoration: none;
+    	color: #9E9E9E;
+    }
+    .head {
+    	padding-bottom:1rem ;
+		background: #1c1c1c;
+		display: flex;
+		justify-content: space-around;  
+	}
+	.head_inside{
+		width: 80%;
+		display: flex;
+		justify-content: space-between;
+	}
+	#menu_open{
+		display: none;
+	}
+	#menu_close{
+		display: none;
+	}
+    .head_logo{
+        width: 40%;
+        color: #9e9e9e;
+        display: inline-block;
+    }
+    /*头部导航栏样式*/
+    .head_menu{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+       	align-items: flex-end;
+    }
+    .head_menu a{
+        transition: all 0.6s;
+    }
+    .head_menu a:hover{
+        color: #fff;
+        color: #23a77f;
+        transform: scale(1.2);
+    }
+    /*轮播图*/
+    .banner{
+    	/*border: 1px solid #f00;*/
+    	width: 100%;
+    	display: flex;
+    	align-items: flex-start;
+    	overflow: hidden;
+    }
+    .banner img{
+    	width: 100%;
+    	float: left;
+    }
+    #banner1{
+    	margin-left:0%;
+    }
+    /*进度条*/
+    .probar{
+    	height: 0.1rem;
+    	padding-top: 0.5rem;
+    	background: #1C1C1C;
+    }
+    .probar-in{
+    	height: 100%;
+    	background: #9E9E9E;
+    	animation: move 3s linear infinite;
+    	border-bottom-right-radius: 0.25rem;
+    	border-top-right-radius: 0.25rem;
+    }
+    /*服务*/
+    .main-icon{
+    	background: #1C1C1C;
+    	display: flex;
+    	flex-flow: column nowrap;
+    	justify-content: space-around;
+    	align-items: center;
+    }
+    .main-top{
+    	color:#9E9E9E;
+    	width: 70%;
+    	padding-top:1rem ;
+    	display: flex;
+    	flex-flow: column nowrap;
+    	justify-content: space-around;
+    	align-items: center;
+    }
+    .main-top p{
+    	color: #fff;
+    	font-size: 3rem;
+    	font-weight: lighter;
+    }
+    .main-top span{
+    	color: #666;
+    	font-size: 1.1rem;
+    	margin-top: 0.5rem;
+    }
+    /*中间图标*/
+    .main-mid{
+    	color: #fff;
+    	width: 70%;
+    	display: flex;
+    	flex-flow: column nowrap;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+    .mid-first,.mid-end{
+    	width: 100%;
+    	margin-bottom: 2rem;
+    	padding-top: 2rem;
+    	display: flex;
+    	justify-content: space-between;
+    }
+    .mid-first div,.mid-end div{
+    	text-align: center;
+    	font-size: 1.2rem;
+    }
+    .mid-first p,.mid-end p{
+    	margin: 0.8rem 0 0.8rem 0;
+    }
+    .mid-first span,.mid-end span{
+    	color: #9E9E9E;
+		font-size: 0.9rem;
+    }
+    /*技术*/
+   .main-second{
+	   	width: 100%;
+	   	background: url(image/product3-t0.jpg);
+	   	color:#9E9E9E;
+	    padding-top:1rem ;
+	    display: flex;
+	    flex-flow: column nowrap;
+	    justify-content: space-around;
+	    align-items: center;
+   }
+   .main-second>.main-top span{
+   		color: #fff;
+   		font-size: 1rem;
+   }
+   /*免费试用*/
+   .second-btn{
+   		font-size: 1.2rem;
+   		padding: 1rem 2rem;
+   		margin-bottom: 2rem;
+   		background: rgba(0,123,255,0.6);
+   		border-radius:0.5rem ;
+   		transition: all 0.4s;
+   }
+   .main-second a{
+   		color: #fff;
+   }
+   .second-btn:hover{
+   		background: #007bff;
+   }
+   /*期待您的合作*/
+  .main-third{
+  		background: #1C1C1C;
+  		background: url(image/develop-bg02.png) no-repeat;
+  		background-size:auto;
+  		color: #000;
+  		display: flex;
+	    flex-flow: column nowrap;
+	    justify-content: space-around;
+	    align-items: center;
+	    text-align: center;
+  }
+  .main-third h1{
+  	font-size: 2.5rem;
+  	margin: 4rem 0rem;
+  	font-weight: lighter;
+  }
+  .main-third p{
+  	color: #383838;
+  	font-size: 1.2rem;
+  	margin:0.5rem 0;
+  }
+  .third-btn{
+  	background: #007BFF;
+  	margin: 3rem 0;
+  	padding: 0.5rem 1rem;
+  	border-radius: 0.25rem;
+  }
+  .third-btn a{
+  	color: #fff;
+  }
+  /*提升效率*/
+ .main-fourth{
+ 	color: #fff;
+ 	background: url(image/bg_help.png);
+ 	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+ }
+ .main-fourth p{
+ 	margin: 4rem 0;
+ 	font-size: 2.3rem;
+ 	font-weight: lighter;
+ }
+ /*图片flex*/
+.main-fourth div{
+	width: 100%;
+	margin: 5rem 0;
+	display: flex;
+	justify-content: space-around;
+}
+/*话务销售*/
+	.main-fifth{
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+	}
+	.main-fifth h1{
+		font-size:2.5rem ;
+		font-weight: lighter;
+		margin: 3rem 0;
+	}
+	.main-fifth p{
+		margin: 0.8rem 0;
+		color: #9E9E9E;
+		padding: 0 1rem;
+		text-align: center;
+	}
+	.main-fifth div{
+		display: flex;
+		justify-content: space-around;
+		overflow: hidden;
+	}
+	/*合作伙伴*/
+	.main-end{
+		background: #1C1C1C;
+		color: #fff;
+		padding-bottom: 3rem;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+	}
+	.main-end h1{
+		font-size:2.5rem ;
+		font-weight: lighter;
+		margin-bottom: 1.5rem;
+		padding-top: 3rem;
+	}
+	.main-end p{
+		color:#9E9E9E;
+	}
+	/*商家logo*/
+	.main-end>div{
+		padding: 3rem 0;
+		display: flex;
+		justify-content: space-around;		
+	}
+	/*尾部footer*/
+	
+	.footer{
+		background: #1C1C1C;
+		color: #fff;
+		border: 0.1rem solid #232323;
+		text-align: center;
+	}
+	.footer h1{
+		font-size: 2.5rem;
+		padding: 3rem 0;
+		font-weight: lighter;
+	}
+	.footer-main{
+		display: flex;
+		justify-content: space-between;
+	}
+	.footer-left{
+		width: 50%;
+		color: #9E9E9E;
+		padding: 3rem 1rem;
+		text-align: left;
+		display: flex;
+		justify-content: space-between;	
+	}
+	.footer-left p{
+		margin: 1rem;
+	}
+	.footer-left div{
+		width: 50%;
+	}
+	.footer-left div:first-child p{
+		font-size: 1.5rem;
+		margin: 1rem 0;
+	}
+	.footer-left div:last-child p{
+		font-size: 0.8rem;
+		margin: 1rem 0;
+	}
+	.footer-right{
+		width: 50%;
+		text-align: left;
+		padding: 3rem;
+	}
+	.footer-right input{
+		width: 90%;
+		height: 1rem;
+		margin-bottom: 2rem;
+		padding: 0.9rem 0.5rem 0.9rem 1.5rem;
+		background: #1C1C1C;
+		color: #fff;
+		outline: none;
+		border: 0.09rem solid #282828;
+		border-radius: 0.2rem;
+		transition: 0.4s;
+	}
+	.footer-right button{
+		width: 25%;
+		height: 3rem;
+		background: #1C1C1C;
+		outline: none;
+		color: #9E9E9E;
+		border: 0.09rem solid #282828;
+		cursor: pointer;
+		border-radius: 0.2rem;
+		transition: 0.4s;
+	}
+	.footer-right button:hover{
+		background: #232323;
+		border:0.09rem solid #fff;
+		color: #fff;
+	}
+	.footer-right input:hover,.footer-right input:focus{
+		border:0.09rem solid #fff;
+	}
+	.others{
+		width: 2.2rem;
+		height: 2.2rem;
+		position: fixed;
+		right: 1rem;
+		bottom: 10rem;
+		z-index: 80;
+		/*border: 1px solid #fff;*/
+	}
+	.others-items{
+		width: 2.2rem;
+		height: 2.2rem;
+		border: 0.01rem solid #282828;
+		text-align: center;
+		padding: 0.1rem;
+		background: #1C1C1C;
+		transition: 0.4s;
+	}
+	.others-items:hover{
+		background: #282828;
+	}
+
+    /*进度条动画*/
+    @keyframes move{
+    	0%{
+    		width: 0%;
+    	}
+    	100%{
+    		width: 100%;
+    	}
+    }
+    /*Pad*/
+    @media screen and (max-width:1199px) {
+    	.head_logo span{
+        	display: none;
+        }
+        .head_logo{
+        	width: 30%;
+        }
+        .head_menu{
+        	width: 70%;
+        }
+        .main-end div img:last-child{
+        	display: none;
+        }
+        .phone{
+        	display: none;
+        }
+    }
+    /*PC*/
+    @media screen and (min-width:1200px){
+        .head_logo span{
+        	display: inline;
+        	font-size: 1rem;
+        }
+        .phone{
+        	display: none;
+        }
+    }
+    /*Phone*/
+    @media only screen and (max-width: 767px) {
+    	/*头部*/
+    	.head_inside{
+    		position: relative;
+    	}
+    	.head{
+    		/*width: 100%;*/
+    	}
+    	#menu_open{
+		display: inline-block;
+		}
+		#menu_close{
+		display: none;
+		}
+    	.head_menu{
+    		padding:0 0 1rem 0; 
+    		border-top-left-radius: 0.5rem;
+    		border-bottom-left-radius: 0.5rem;
+    		position: absolute;
+    		z-index: 99;
+    		right: -2.5rem;
+    		top: -16rem;
+    		background: #1C1C1C;
+    		width: 50%;
+    		flex-flow: column nowrap;
+    		align-items: flex-end;
+    		transition: all 0.6s;
+    	}
+    	.head_menu a{
+    		padding: 1rem 1rem 0 0;
+    	}
+    	
+    	/*服务*/
+    	.mid-first,.mid-end{
+    		
+    		flex-flow: row wrap;
+    		
+    	}
+    	.mid-first div,.mid-end div{
+    		width:50%;
+    	}
+    	
+    	/*效率*/
+    	.main-fourth{
+    		background-repeat:no-repeat ;
+    		background-size:cover;
+    	}
+    	.main-fourth div{
+    		flex-flow: row wrap;
+    		margin-top: 0;
+    	}
+    	.main-fourth div img{
+    		width: 34%;
+    		margin: 1.5rem 0;
+    	}
+    	/*话务销售*/
+    	
+    	.main-fifth p{
+    		
+    		padding: 0.5rem;
+    	}
+		/*合作伙伴*/
+		.main-end>div{
+			flex-flow: row wrap;
+		} 
+		.main-end div img:last-child{
+        	display: inline-block;
+        } 
+        .main-end img{
+        	margin: 1rem 0;
+        }
+        /*联系我们*/
+        .footer-main{
+        	flex-flow: column nowrap; 
+        }
+        .footer-left,.footer-right{
+        	width: 100%;
+        	padding: 2rem 0 2rem 0.1rem;
+        	/*text-align: center;*/
+        }
+        /*右下角固定定位隐藏*/
+       	.others{
+       		display:none;
+       	}
+       	/*电话弹框*/
+       	.phone{
+       		position: fixed;
+       		left: 0rem;
+       		bottom: 3rem;
+       		color: #fff;
+       		background: #232323;
+       		border-radius: 0.5rem;
+       		display: flex;
+       		flex-flow: column nowrap;
+       		align-items: center;
+       		transition: 0.4s;
+    	}
+    	.phone p{
+    		font-size: 1.5rem;
+    		font-weight: lighter;
+    		margin: 0.5rem;
+    	}
+    	.phone div:first-child{
+    		
+    		margin:0.8rem 0;
+    	}
+    	.phone div:first-child span{
+    		font-size: 2rem;
+    	}
+    	.phone div:last-child{
+    		padding: 0.5rem;
+    		margin-bottom:0.8rem;
+    	}
+    	.phone input{
+    		padding: 0.3rem 0;
+    		margin-bottom: 0.3rem;
+    		width: 100%;
+    		outline: none;
+    		border: none;
+    		border-radius: 0.2rem;
+    	}
